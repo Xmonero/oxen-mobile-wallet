@@ -1,8 +1,8 @@
-import 'package:oxen_wallet/src/wallet/oxen/oxen_amount_format.dart';
-import 'package:oxen_coin/oxen_coin_structs.dart';
-import 'package:oxen_wallet/src/util/parseBoolFromString.dart';
-import 'package:oxen_wallet/src/wallet/transaction/transaction_direction.dart';
-import 'package:oxen_wallet/src/domain/common/format_amount.dart';
+import 'package:quenero_wallet/src/wallet/quenero/quenero_amount_format.dart';
+import 'package:quenero_coin/quenero_coin_structs.dart';
+import 'package:quenero_wallet/src/util/parseBoolFromString.dart';
+import 'package:quenero_wallet/src/wallet/transaction/transaction_direction.dart';
+import 'package:quenero_wallet/src/domain/common/format_amount.dart';
 
 class TransactionInfo {
   TransactionInfo(this.id, this.height, this.direction, this.date,
@@ -41,7 +41,7 @@ class TransactionInfo {
 
   String _fiatAmount;
 
-  String amountFormatted() => '${oxenAmountToString(amount)} OXEN';
+  String amountFormatted() => '${queneroAmountToString(amount)} QMR';
 
   String fiatAmount() => _fiatAmount ?? '';
 

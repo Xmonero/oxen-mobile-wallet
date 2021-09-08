@@ -1,8 +1,8 @@
 import 'package:flutter/foundation.dart';
 import 'package:mobx/mobx.dart';
-import 'package:oxen_wallet/src/wallet/wallet_description.dart';
-import 'package:oxen_wallet/src/domain/services/wallet_list_service.dart';
-import 'package:oxen_wallet/src/domain/services/wallet_service.dart';
+import 'package:quenero_wallet/src/wallet/wallet_description.dart';
+import 'package:quenero_wallet/src/domain/services/wallet_list_service.dart';
+import 'package:quenero_wallet/src/domain/services/wallet_service.dart';
 
 part 'wallet_list_store.g.dart';
 

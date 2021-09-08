@@ -1,11 +1,11 @@
 import 'package:flutter/foundation.dart';
 import 'package:hive/hive.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:oxen_wallet/src/node/node.dart';
-import 'package:oxen_wallet/src/domain/common/balance_display_mode.dart';
-import 'package:oxen_wallet/src/domain/common/fiat_currency.dart';
-import 'package:oxen_wallet/src/node/node_list.dart';
-import 'package:oxen_wallet/src/wallet/oxen/transaction/transaction_priority.dart';
+import 'package:quenero_wallet/src/node/node.dart';
+import 'package:quenero_wallet/src/domain/common/balance_display_mode.dart';
+import 'package:quenero_wallet/src/domain/common/fiat_currency.dart';
+import 'package:quenero_wallet/src/node/node_list.dart';
+import 'package:quenero_wallet/src/wallet/quenero/transaction/transaction_priority.dart';
 
 Future defaultSettingsMigration(
     {@required int version,
@@ -30,7 +30,7 @@ Future defaultSettingsMigration(
           await sharedPreferences.setString(
               'current_fiat_currency', FiatCurrency.usd.toString());
           await sharedPreferences.setInt(
-              'current_fee_priority', OxenTransactionPriority.standard.raw);
+              'current_fee_priority', QueneroTransactionPriority.standard.raw);
           await sharedPreferences.setInt('current_balance_display_mode',
               BalanceDisplayMode.availableBalance.raw);
           await sharedPreferences.setBool('save_recipient_address', true);
@@ -62,11 +62,11 @@ Future defaultSettingsMigration(
 
 Future<void> replaceNodesMigration({@required Box<Node> nodes}) async {
   final replaceNodes = <String, Node>{
-    'public.loki.foundation:22023':
-        Node(uri: 'public.loki.foundation:22023'),
-    'nodes.hashvault.pro:22023':
-        Node(uri: 'nodes.hashvault.pro:22023'),
-    'node.loki-pool.com:18081': Node(uri: 'node.loki-pool.com:18081')
+    'main.quenero.tech:19991':
+        Node(uri: 'main.quenero.tech:19991'),
+    'daemons.quenero.tech:19991':
+        Node(uri: 'daemons.quenero.tech:19991'),
+    'rpc.quenero.tech:19991': Node(uri: 'rpc.quenero.tech:19991')
   };
 
   nodes.values.forEach((Node node) async {
@@ -88,9 +88,9 @@ Future<void> changeCurrentNodeToDefault(
   var nodeUri = '';
 
   if (timeZone >= 1) { // Eurasia
-    nodeUri = 'public.loki.foundation:22023';
+    nodeUri = 'main.quenero.tech:19991';
   } else if (timeZone <= -4) { // America
-    nodeUri = 'freyr.imaginary.stream:22023';
+    nodeUri = 'rpc.main.quenero.tech:19991';
   }
 
   final node = nodes.values.firstWhere((Node node) => node.uri == nodeUri) ??
@@ -104,9 +104,9 @@ Future<void> replaceDefaultNode(
     {@required SharedPreferences sharedPreferences,
     @required Box<Node> nodes}) async {
   const nodesForReplace = <String>[
-    'public.loki.foundation:22023',
-    'nodes.hashvault.pro:22023',
-    'node.loki-pool.com:18081'
+    'main.quenero.tech:19991',
+    'daemons.quenero.tech:19991',
+    'rpc.quenero.tech:19991'
   ];
   final currentNodeId = sharedPreferences.getInt('current_node_id');
   final currentNode =

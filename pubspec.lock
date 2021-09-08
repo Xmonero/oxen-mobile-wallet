@@ -483,10 +483,10 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.0"
-  oxen_coin:
+  quenero_coin:
     dependency: "direct main"
     description:
-      path: oxen_coin
+      path: quenero_coin
       relative: true
     source: path
     version: "0.0.1"

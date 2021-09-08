@@ -35,20 +35,20 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
-  /// `WELCOME\nTO OXEN WALLET`
+  /// `WELCOME\nTO QMR WALLET`
   String get welcome {
     return Intl.message(
-      'WELCOME\nTO OXEN WALLET',
+      'WELCOME\nTO QMR WALLET',
       name: 'welcome',
       desc: '',
       args: [],
     );
   }
 
-  /// `Awesome wallet\nfor Oxen`
+  /// `Awesome wallet\nfor Quenero`
   String get first_wallet_text {
     return Intl.message(
-      'Awesome wallet\nfor Oxen',
+      'Awesome wallet\nfor Quenero',
       name: 'first_wallet_text',
       desc: '',
       args: [],
@@ -265,31 +265,31 @@ class S {
     );
   }
 
-  /// `OXEN Hidden`
-  String get oxen_hidden {
+  /// `QMR Hidden`
+  String get quenero_hidden {
     return Intl.message(
-      'OXEN Hidden',
-      name: 'oxen_hidden',
+      'QMR Hidden',
+      name: 'quenero_hidden',
       desc: '',
       args: [],
     );
   }
 
-  /// `OXEN Available Balance`
-  String get oxen_available_balance {
+  /// `QMR Available Balance`
+  String get quenero_available_balance {
     return Intl.message(
-      'OXEN Available Balance',
-      name: 'oxen_available_balance',
+      'QMR Available Balance',
+      name: 'quenero_available_balance',
       desc: '',
       args: [],
     );
   }
 
-  /// `OXEN Full Balance`
-  String get oxen_full_balance {
+  /// `QMR Full Balance`
+  String get quenero_full_balance {
     return Intl.message(
-      'OXEN Full Balance',
-      name: 'oxen_full_balance',
+      'QMR Full Balance',
+      name: 'quenero_full_balance',
       desc: '',
       args: [],
     );
@@ -625,11 +625,11 @@ class S {
     );
   }
 
-  /// `Send OXEN`
-  String get send_oxen {
+  /// `Send QMR`
+  String get send_quenero {
     return Intl.message(
-      'Send OXEN',
-      name: 'send_oxen',
+      'Send QMR',
+      name: 'send_quenero',
       desc: '',
       args: [],
     );
@@ -945,10 +945,10 @@ class S {
     );
   }
 
-  /// `You can restore the whole Oxen Wallet app from your back-up file`
+  /// `You can restore the whole Quenero Wallet app from your back-up file`
   String get restore_description_from_backup {
     return Intl.message(
-      'You can restore the whole Oxen Wallet app from your back-up file',
+      'You can restore the whole Quenero Wallet app from your back-up file',
       name: 'restore_description_from_backup',
       desc: '',
       args: [],
@@ -1215,10 +1215,10 @@ class S {
     );
   }
 
-  /// `Send Oxen`
+  /// `Send Quenero`
   String get send_title {
     return Intl.message(
-      'Send Oxen',
+      'Send Quenero',
       name: 'send_title',
       desc: '',
       args: [],
@@ -1235,11 +1235,11 @@ class S {
     );
   }
 
-  /// `Oxen address`
-  String get send_oxen_address {
+  /// `Quenero address`
+  String get send_quenero_address {
     return Intl.message(
-      'Oxen address',
-      name: 'send_oxen_address',
+      'Quenero address',
+      name: 'send_quenero_address',
       desc: '',
       args: [],
     );
@@ -1355,21 +1355,21 @@ class S {
     );
   }
 
-  /// `Service Node Key`
-  String get service_node_key {
+  /// `Masternode Key`
+  String get masternode_key {
     return Intl.message(
-      'Service Node Key',
-      name: 'service_node_key',
+      'Masternode Key',
+      name: 'masternode_key',
       desc: '',
       args: [],
     );
   }
 
-  /// `Stake Oxen`
-  String get stake_oxen {
+  /// `Stake Quenero`
+  String get stake_quenero {
     return Intl.message(
-      'Stake Oxen',
-      name: 'stake_oxen',
+      'Stake Quenero',
+      name: 'stake_quenero',
       desc: '',
       args: [],
     );
@@ -1875,10 +1875,10 @@ class S {
     );
   }
 
-  /// `Oxen Wallet`
+  /// `Quenero Wallet`
   String get wallet_list_title {
     return Intl.message(
-      'Oxen Wallet',
+      'Quenero Wallet',
       name: 'wallet_list_title',
       desc: '',
       args: [],
@@ -2075,11 +2075,11 @@ class S {
     );
   }
 
-  /// `OXEN value can't exceed available balance.\nThe number of fraction digits must be less or equal to 12`
-  String get error_text_oxen {
+  /// `QMR value can't exceed available balance.\nThe number of fraction digits must be less or equal to 12`
+  String get error_text_quenero {
     return Intl.message(
-      'OXEN value can\'t exceed available balance.\nThe number of fraction digits must be less or equal to 12',
-      name: 'error_text_oxen',
+      'QMR value can\'t exceed available balance.\nThe number of fraction digits must be less or equal to 12',
+      name: 'error_text_quenero',
       desc: '',
       args: [],
     );
@@ -2145,11 +2145,11 @@ class S {
     );
   }
 
-  /// `A Service Node key can only contain 64 chars in hex`
-  String get error_text_service_node {
+  /// `A Masternode key can only contain 64 chars in hex`
+  String get error_text_masternode {
     return Intl.message(
-      'A Service Node key can only contain 64 chars in hex',
-      name: 'error_text_service_node',
+      'A Masternode key can only contain 64 chars in hex',
+      name: 'error_text_masternode',
       desc: '',
       args: [],
     );
@@ -2405,10 +2405,10 @@ class S {
     );
   }
 
-  /// `OXEN Recipient Detected`
+  /// `QMR Recipient Detected`
   String get openalias_alert_title {
     return Intl.message(
-      'OXEN Recipient Detected',
+      'QMR Recipient Detected',
       name: 'openalias_alert_title',
       desc: '',
       args: [],
@@ -2445,20 +2445,20 @@ class S {
     );
   }
 
-  /// `NEVER give your Oxen wallet {item} to ANYONE!`
+  /// `NEVER give your Quenero wallet {item} to ANYONE!`
   String never_give_your(Object item) {
     return Intl.message(
-      'NEVER give your Oxen wallet $item to ANYONE!',
+      'NEVER give your Quenero wallet $item to ANYONE!',
       name: 'never_give_your',
       desc: '',
       args: [item],
     );
   }
 
-  /// `NEVER input your Oxen wallet {item} into any software or website other than the OFFICIAL Oxen wallets downloaded directly from the {app_store}, the Oxen website, or the Oxen GitHub.\nAre you sure you want to access your wallet {item}?`
+  /// `NEVER input your Quenero wallet {item} into any software or website other than the OFFICIAL Quenero wallets downloaded directly from the {app_store}, the Quenero website, or the Quenero GitHub.\nAre you sure you want to access your wallet {item}?`
   String dangerzone_warning(Object item, Object app_store) {
     return Intl.message(
-      'NEVER input your Oxen wallet $item into any software or website other than the OFFICIAL Oxen wallets downloaded directly from the $app_store, the Oxen website, or the Oxen GitHub.\nAre you sure you want to access your wallet $item?',
+      'NEVER input your Quenero wallet $item into any software or website other than the OFFICIAL Quenero wallets downloaded directly from the $app_store, the Quenero website, or the Quenero GitHub.\nAre you sure you want to access your wallet $item?',
       name: 'dangerzone_warning',
       desc: '',
       args: [item, app_store],

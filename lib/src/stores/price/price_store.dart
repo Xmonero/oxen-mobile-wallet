@@ -1,6 +1,6 @@
 import 'package:mobx/mobx.dart';
-import 'package:oxen_wallet/src/domain/common/crypto_currency.dart';
-import 'package:oxen_wallet/src/domain/common/fiat_currency.dart';
+import 'package:quenero_wallet/src/domain/common/crypto_currency.dart';
+import 'package:quenero_wallet/src/domain/common/fiat_currency.dart';
 
 part 'price_store.g.dart';
 

@@ -1,6 +1,6 @@
-# Oxen Wallet
+# Quenero Wallet
 
-The Oxen Wallet is a Fork of the Cake Wallet.
+The Quenero Wallet is a Fork of the Cake Wallet.
 
 ## Build
 
@@ -14,13 +14,13 @@ The Oxen Wallet is a Fork of the Cake Wallet.
     flutter pub run build_runner build
     ```
 
-3. To download the latest build of the Oxen Dependencies run 
+3. To download the latest build of the Quenero Dependencies run 
    ```
-   ./tool/download-android-deps.sh https://oxen.rocks/oxen-io/oxen-core/oxen-stable-android-deps-LATEST.tar.xz
-   ./tool/download-ios-deps.sh https://oxen.rocks/oxen-io/oxen-core/oxen-stable-ios-deps-LATEST.tar.xz
+   ./tool/download-android-deps.sh https://quenero.tech/quenero/quenero-core/quenero-stable-android-deps-LATEST.tar.xz
+   ./tool/download-ios-deps.sh https://quenero.tech/quenero/quenero-core/quenero-stable-ios-deps-LATEST.tar.xz
    ```
-   Or build the Oxen Dependencies and copy the Android deps into `oxen_coin/ios/External/android/oxen`
-   and the ios into `oxen_coin/ios/External/ios/oxen`
+   Or build the Quenero Dependencies and copy the Android deps into `quenero_coin/ios/External/android/quenero`
+   and the ios into `quenero_coin/ios/External/ios/quenero`
 
 4. Generate Launcher Icons
     ```shell script

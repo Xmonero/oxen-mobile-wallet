@@ -1,11 +1,11 @@
 import 'package:rxdart/rxdart.dart';
-import 'package:oxen_wallet/src/node/sync_status.dart';
-import 'package:oxen_wallet/src/wallet/transaction/transaction_history.dart';
-import 'package:oxen_wallet/src/wallet/wallet_type.dart';
-import 'package:oxen_wallet/src/wallet/transaction/transaction_creation_credentials.dart';
-import 'package:oxen_wallet/src/wallet/transaction/pending_transaction.dart';
-import 'package:oxen_wallet/src/wallet/balance.dart';
-import 'package:oxen_wallet/src/node/node.dart';
+import 'package:quenero_wallet/src/node/sync_status.dart';
+import 'package:quenero_wallet/src/wallet/transaction/transaction_history.dart';
+import 'package:quenero_wallet/src/wallet/wallet_type.dart';
+import 'package:quenero_wallet/src/wallet/transaction/transaction_creation_credentials.dart';
+import 'package:quenero_wallet/src/wallet/transaction/pending_transaction.dart';
+import 'package:quenero_wallet/src/wallet/balance.dart';
+import 'package:quenero_wallet/src/node/node.dart';
 
 abstract class Wallet {
   WalletType getType();

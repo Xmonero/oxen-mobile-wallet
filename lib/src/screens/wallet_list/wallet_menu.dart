@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:oxen_wallet/routes.dart';
+import 'package:quenero_wallet/routes.dart';
 import 'package:provider/provider.dart';
-import 'package:oxen_wallet/generated/l10n.dart';
-import 'package:oxen_wallet/src/stores/wallet_list/wallet_list_store.dart';
-import 'package:oxen_wallet/src/wallet/wallet_description.dart';
-import 'package:oxen_wallet/src/screens/auth/auth_page.dart';
+import 'package:quenero_wallet/generated/l10n.dart';
+import 'package:quenero_wallet/src/stores/wallet_list/wallet_list_store.dart';
+import 'package:quenero_wallet/src/wallet/wallet_description.dart';
+import 'package:quenero_wallet/src/screens/auth/auth_page.dart';
 
 class WalletMenu {
   WalletMenu(this.context);

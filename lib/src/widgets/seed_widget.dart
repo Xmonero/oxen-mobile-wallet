@@ -1,21 +1,21 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:oxen_wallet/generated/l10n.dart';
-import 'package:oxen_wallet/palette.dart';
-import 'package:oxen_wallet/src/wallet/mnemotic_item.dart';
-import 'package:oxen_wallet/src/wallet/oxen/mnemonics/chinese_simplified.dart';
-import 'package:oxen_wallet/src/wallet/oxen/mnemonics/dutch.dart';
-import 'package:oxen_wallet/src/wallet/oxen/mnemonics/english.dart';
-import 'package:oxen_wallet/src/wallet/oxen/mnemonics/english_old.dart';
-import 'package:oxen_wallet/src/wallet/oxen/mnemonics/french.dart';
-import 'package:oxen_wallet/src/wallet/oxen/mnemonics/german.dart';
-import 'package:oxen_wallet/src/wallet/oxen/mnemonics/italian.dart';
-import 'package:oxen_wallet/src/wallet/oxen/mnemonics/japanese.dart';
-import 'package:oxen_wallet/src/wallet/oxen/mnemonics/portuguese.dart';
-import 'package:oxen_wallet/src/wallet/oxen/mnemonics/russian.dart';
-import 'package:oxen_wallet/src/wallet/oxen/mnemonics/spanish.dart';
-import 'package:oxen_wallet/src/widgets/primary_button.dart';
+import 'package:quenero_wallet/generated/l10n.dart';
+import 'package:quenero_wallet/palette.dart';
+import 'package:quenero_wallet/src/wallet/mnemotic_item.dart';
+import 'package:quenero_wallet/src/wallet/quenero/mnemonics/chinese_simplified.dart';
+import 'package:quenero_wallet/src/wallet/quenero/mnemonics/dutch.dart';
+import 'package:quenero_wallet/src/wallet/quenero/mnemonics/english.dart';
+import 'package:quenero_wallet/src/wallet/quenero/mnemonics/english_old.dart';
+import 'package:quenero_wallet/src/wallet/quenero/mnemonics/french.dart';
+import 'package:quenero_wallet/src/wallet/quenero/mnemonics/german.dart';
+import 'package:quenero_wallet/src/wallet/quenero/mnemonics/italian.dart';
+import 'package:quenero_wallet/src/wallet/quenero/mnemonics/japanese.dart';
+import 'package:quenero_wallet/src/wallet/quenero/mnemonics/portuguese.dart';
+import 'package:quenero_wallet/src/wallet/quenero/mnemonics/russian.dart';
+import 'package:quenero_wallet/src/wallet/quenero/mnemonics/spanish.dart';
+import 'package:quenero_wallet/src/widgets/primary_button.dart';
 
 final List<String> _englishWords =
     EnglishMnemonics.words + EnglishOldMnemonics.words;
@@ -260,7 +260,7 @@ class SeedWidgetState extends State<SeedWidget> {
                   child: Container(
                       decoration: BoxDecoration(
                           color:
-                              isValid ? Colors.transparent : OxenPalette.red),
+                              isValid ? Colors.transparent : QueneroPalette.red),
                       margin: EdgeInsets.only(right: 7, bottom: 8),
                       child: Text(
                         item.toString(),
@@ -330,7 +330,7 @@ class SeedWidgetState extends State<SeedWidget> {
                           errorText: _errorMessage,
                           focusedBorder: UnderlineInputBorder(
                               borderSide: BorderSide(
-                                  color: OxenPalette.teal, width: 2.0)),
+                                  color: QueneroPalette.teal, width: 2.0)),
                           enabledBorder: UnderlineInputBorder(
                               borderSide: BorderSide(
                                   color: Theme.of(context).focusColor,

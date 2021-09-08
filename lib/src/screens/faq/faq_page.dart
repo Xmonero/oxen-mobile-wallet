@@ -2,9 +2,9 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
-import 'package:oxen_wallet/generated/l10n.dart';
-import 'package:oxen_wallet/src/stores/settings/settings_store.dart';
-import 'package:oxen_wallet/src/screens/base_page.dart';
+import 'package:quenero_wallet/generated/l10n.dart';
+import 'package:quenero_wallet/src/stores/settings/settings_store.dart';
+import 'package:quenero_wallet/src/screens/base_page.dart';
 
 class FaqPage extends BasePage {
   @override

@@ -1,10 +1,10 @@
 import 'dart:async';
-import 'package:oxen_wallet/src/domain/common/fiat_currency.dart';
+import 'package:quenero_wallet/src/domain/common/fiat_currency.dart';
 import 'package:flutter/foundation.dart';
-import 'package:oxen_wallet/src/domain/common/crypto_currency.dart';
-import 'package:oxen_wallet/src/domain/common/fetch_price.dart';
-import 'package:oxen_wallet/src/stores/price/price_store.dart';
-import 'package:oxen_wallet/src/stores/settings/settings_store.dart';
+import 'package:quenero_wallet/src/domain/common/crypto_currency.dart';
+import 'package:quenero_wallet/src/domain/common/fetch_price.dart';
+import 'package:quenero_wallet/src/stores/price/price_store.dart';
+import 'package:quenero_wallet/src/stores/settings/settings_store.dart';
 
 bool _startedUpdatingPrice = false;
 
@@ -20,7 +20,7 @@ Future<void> startUpdatingPrice(
     return;
   }
 
-  const currentCrypto = CryptoCurrency.oxen;
+  const currentCrypto = CryptoCurrency.quenero;
   _startedUpdatingPrice = true;
 
   final price = await updatePrice(

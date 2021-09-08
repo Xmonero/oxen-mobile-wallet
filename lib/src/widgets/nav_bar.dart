@@ -1,5 +1,5 @@
-import 'package:oxen_wallet/theme_changer.dart';
-import 'package:oxen_wallet/themes.dart';
+import 'package:quenero_wallet/theme_changer.dart';
+import 'package:quenero_wallet/themes.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';

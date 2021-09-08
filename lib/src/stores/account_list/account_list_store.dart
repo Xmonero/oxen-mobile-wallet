@@ -1,12 +1,12 @@
 import 'dart:async';
 import 'package:flutter/foundation.dart';
 import 'package:mobx/mobx.dart';
-import 'package:oxen_wallet/src/wallet/wallet.dart';
-import 'package:oxen_wallet/src/wallet/oxen/oxen_wallet.dart';
-import 'package:oxen_wallet/src/wallet/oxen/account.dart';
-import 'package:oxen_wallet/src/wallet/oxen/account_list.dart';
-import 'package:oxen_wallet/src/domain/services/wallet_service.dart';
-import 'package:oxen_wallet/generated/l10n.dart';
+import 'package:quenero_wallet/src/wallet/wallet.dart';
+import 'package:quenero_wallet/src/wallet/quenero/quenero_wallet.dart';
+import 'package:quenero_wallet/src/wallet/quenero/account.dart';
+import 'package:quenero_wallet/src/wallet/quenero/account_list.dart';
+import 'package:quenero_wallet/src/domain/services/wallet_service.dart';
+import 'package:quenero_wallet/generated/l10n.dart';
 
 part 'account_list_store.g.dart';
 
@@ -78,7 +78,7 @@ abstract class AccountListStoreBase with Store {
       await _onAccountsChangeSubscription.cancel();
     }
 
-    if (wallet is OxenWallet) {
+    if (wallet is QueneroWallet) {
       _accountList = wallet.getAccountList();
       _onAccountsChangeSubscription =
           _accountList.accounts.listen((accounts) => this.accounts = accounts);

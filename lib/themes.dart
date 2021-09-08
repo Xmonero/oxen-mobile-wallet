@@ -12,36 +12,36 @@ class Themes {
     focusColor: Palette.lightGrey, // focused and enabled border color for text fields
     primaryTextTheme: TextTheme(
       headline6: TextStyle(
-        color: OxenPalette.black
+        color: QueneroPalette.black
       ),
       caption: TextStyle(
-        color: OxenPalette.black,
+        color: QueneroPalette.black,
       ),
       button: TextStyle(
-        color: OxenPalette.black,
-          backgroundColor: OxenPalette.tealWithOpacity,
-          decorationColor: OxenPalette.teal
+        color: QueneroPalette.black,
+          backgroundColor: QueneroPalette.tealWithOpacity,
+          decorationColor: QueneroPalette.teal
       ),
       headline5: TextStyle(
-        color: OxenPalette.black // account list tile, contact page
+        color: QueneroPalette.black // account list tile, contact page
       ),
       subtitle2: TextStyle(
         color: Palette.wildDarkBlue // filters
       ),
       subtitle1: TextStyle(
-        color: OxenPalette.black // transaction raw, trade raw
+        color: QueneroPalette.black // transaction raw, trade raw
       ),
       overline: TextStyle(
         color: PaletteDark.darkThemeCloseButton // standart list row, transaction details
       )
     ),
     toggleButtonsTheme: ToggleButtonsThemeData(
-      selectedColor: OxenPalette.teal,
+      selectedColor: QueneroPalette.teal,
       disabledColor: Palette.wildDarkBlue,
       color: Palette.switchBackground,
       borderColor: Palette.switchBorder
     ),
-    selectedRowColor: OxenPalette.tealWithOpacity,
+    selectedRowColor: QueneroPalette.tealWithOpacity,
     dividerColor: Palette.lightGrey,
     dividerTheme: DividerThemeData(
       color: Palette.lightGrey
@@ -61,7 +61,7 @@ class Themes {
         decorationColor: Palette.deepIndigo // button indigo border color
       ),
       subtitle2: TextStyle(
-        color: OxenPalette.black,
+        color: QueneroPalette.black,
         backgroundColor: Palette.lightLavender // send page border color
       ),
       headline5: TextStyle(
@@ -74,8 +74,8 @@ class Themes {
         backgroundColor: Palette.lightGrey2 // change language background color
       ),
       overline: TextStyle(
-        color: OxenPalette.blue, // send page text
-        backgroundColor: OxenPalette.blue, // send page text
+        color: QueneroPalette.blue, // send page text
+        backgroundColor: QueneroPalette.blue, // send page text
         decorationColor: Palette.manatee // send page text
       )
     ),
@@ -109,8 +109,8 @@ class Themes {
       ),
       button: TextStyle(
         color: Palette.wildDarkBlue,
-        backgroundColor: OxenPalette.tealWithOpacity, // button indigo background color
-        decorationColor: OxenPalette.teal // button indigo border color
+        backgroundColor: QueneroPalette.tealWithOpacity, // button indigo background color
+        decorationColor: QueneroPalette.teal // button indigo border color
       ),
       headline5: TextStyle(
         color: PaletteDark.darkThemeGrey // account list tile, contact page
@@ -126,12 +126,12 @@ class Themes {
       )
     ),
     toggleButtonsTheme: ToggleButtonsThemeData(
-      selectedColor: OxenPalette.teal,
+      selectedColor: QueneroPalette.teal,
       disabledColor: Palette.wildDarkBlue,
       color: PaletteDark.switchBackground,
       borderColor: PaletteDark.darkThemeMidGrey
     ),
-    selectedRowColor: OxenPalette.tealWithOpacity,
+    selectedRowColor: QueneroPalette.tealWithOpacity,
     dividerColor: PaletteDark.darkThemeDarkGrey,
     dividerTheme: DividerThemeData(
       color: PaletteDark.darkThemeGreyWithOpacity

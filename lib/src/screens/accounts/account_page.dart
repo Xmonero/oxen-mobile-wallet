@@ -1,13 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:oxen_wallet/generated/l10n.dart';
-import 'package:oxen_wallet/src/screens/base_page.dart';
-import 'package:oxen_wallet/src/stores/account_list/account_list_store.dart';
-import 'package:oxen_wallet/src/wallet/oxen/account.dart';
-import 'package:oxen_wallet/src/widgets/oxen_text_field.dart';
-import 'package:oxen_wallet/src/widgets/primary_button.dart';
-import 'package:oxen_wallet/src/widgets/scollable_with_bottom_section.dart';
+import 'package:quenero_wallet/generated/l10n.dart';
+import 'package:quenero_wallet/src/screens/base_page.dart';
+import 'package:quenero_wallet/src/stores/account_list/account_list_store.dart';
+import 'package:quenero_wallet/src/wallet/quenero/account.dart';
+import 'package:quenero_wallet/src/widgets/quenero_text_field.dart';
+import 'package:quenero_wallet/src/widgets/primary_button.dart';
+import 'package:quenero_wallet/src/widgets/scollable_with_bottom_section.dart';
 import 'package:provider/provider.dart';
 
 class AccountPage extends BasePage {
@@ -59,7 +59,7 @@ class AccountFormState extends State<AccountForm> {
             child: Column(
               children: <Widget>[
                 Center(
-                  child: OxenTextField(
+                  child: QueneroTextField(
                     hintText: S.of(context).account,
                     controller: _textController,
                     validator: (value) {

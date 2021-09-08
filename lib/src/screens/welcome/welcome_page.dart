@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:oxen_wallet/generated/l10n.dart';
-import 'package:oxen_wallet/palette.dart';
-import 'package:oxen_wallet/routes.dart';
-import 'package:oxen_wallet/src/screens/base_page.dart';
-import 'package:oxen_wallet/src/widgets/primary_button.dart';
+import 'package:quenero_wallet/generated/l10n.dart';
+import 'package:quenero_wallet/palette.dart';
+import 'package:quenero_wallet/routes.dart';
+import 'package:quenero_wallet/src/screens/base_page.dart';
+import 'package:quenero_wallet/src/widgets/primary_button.dart';
 
 class WelcomePage extends BasePage {
   static const _baseWidth = 411.43;
@@ -28,7 +28,7 @@ class WelcomePage extends BasePage {
             children: <Widget>[
               Padding(
                 padding: EdgeInsets.all(20),
-                child: Image.asset('assets/images/oxen.png', height: 124, width: 400),
+                child: Image.asset('assets/images/quenero.png', height: 124, width: 400),
               ),
               Padding(
                 padding: EdgeInsets.all(10),
